@@ -1,0 +1,6 @@
+$('.counter').each(function(){var $this=$(this);var countTo=$this.attr('data-count');$({countNum:$this.text()}).animate({countNum:countTo},{duration:3000,easing:'linear',step:function(){$this.text(Math.floor(this.countNum))},complete:function(){$this.text(this.countNum)}})});jQuery(function(){if($(window).scrollTop()>="250")$("#ToTop").fadeIn("slow")
+$(window).scroll(function(){if($(window).scrollTop()<="250")$("#ToTop").fadeOut("slow")
+else $("#ToTop").fadeIn("slow")});if($(window).scrollTop()<=$(document).height()-"999")$("#OnBottom").fadeIn("slow")
+$(window).scroll(function(){if($(window).scrollTop()>=$(document).height()-"999")$("#OnBottom").fadeOut("slow")
+else $("#OnBottom").fadeIn("slow")});$("#ToTop").click(function(){$("html,body").animate({scrollTop:0},"slow")})
+$("#OnBottom").click(function(){$("html,body").animate({scrollTop:$(document).height()},"slow")})});$('.icons').addClass('animated fadeInDown');$('.text').addClass('animated bounceInUp');$(document).ready(function(){$(".header__burger-1").click(function(event){$(".header__burger-1, .screen-1__menubar").toggleClass('active')})})
