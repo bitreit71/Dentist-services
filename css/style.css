@@ -103,7 +103,7 @@ h6 {
     background: url(../img/dantist.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto
+    height: 100vh;
 }
 
 .screen-1__bg {
@@ -1358,9 +1358,9 @@ option {
         font-size: 21px
     }
     .screen-1__content-container {
-        max-width: 809px;
-        width: 100%;
-        padding: 97px 82px
+	max-width: 809px;
+   	width: 100%;
+    	padding: 311px 82px 97px 82px;
     }
     .screen-1__button {
         font-size: 21px
