@@ -1513,7 +1513,7 @@ option {
         font-size: 48px
     }
     .screen-1__content-container {
-        padding: 97px 29px
+        padding: 59px 29px 97px 29px;
     }
     .screen-2__top-text h3,
     .screen-2__bootom-text h3 {
